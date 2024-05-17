@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav" id="main-nav"></nav>
+
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("main-nav").innerHTML = html;
+        });
+    </script>
+
+    <!-- Conteúdo do portifolio -->
+
+    <div class="content">
+      <div class="container">
+        <h1>Portifólio</h1>
+        <h2>Trabalho 1: Site para Revendedora de Relógios de Ponto</h2>
+
+        <h3>Descrição:</h3>
+        <p>
+          Desenvolvimento de um site completo para uma revendedora de relógios
+          de ponto, com foco em facilitar a navegação dos usuários e fornecer
+          informações detalhadas sobre os produtos e serviços oferecidos.
+        </p>
+        <h3>Detalhes Adicionais:</h3>
+        <p>Menu de Navegação com 4 Abas:</p>
+
+        <ul>
+          <li>
+            "Sobre Nós": Informações detalhadas sobre a empresa, sua história,
+            missão, visão e clientes atendidos.
+          </li>
+          <li>
+            "Produtos": Aba dedicada aos equipamentos disponíveis para venda,
+            com descrições e especificações técnicas.
+          </li>
+          <li>
+            "Acessórios": Informações sobre os acessórios complementares aos
+            relógios de ponto, como cartões de ponto e acessórios de instalação.
+          </li>
+          <li>
+            "Contato": Formulário de contato para facilitar a comunicação com os
+            clientes interessados nos produtos da empresa.
+          </li>
+        </ul>
+
+        <h3>Tecnologias Utilizadas:</h3>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Angular Framework</li>
+          <li>TypeScript</li>
+          <li>
+            Link de acesso: <a href="https://rodvale.com.br/">rodvale.com.br</a>
+          </li>
+        </ul>
+
+        <h2>Trabalho 2: Trabalho de Conclusão de Curso da ETEC</h2>
+        <h3>Descrição:</h3>
+        <p>
+          Desenvolvimento de um buscador de escolas nas proximidades como
+          trabalho de conclusão de curso na ETEC, focado em facilitar a busca
+          por instituições educacionais na região através do CEP.
+        </p>
+        <h3>Detalhes Adicionais:</h3>
+        <ul>
+          <li>
+            Barra de pesquisa por CEP: Os usuários podem inserir seu CEP na
+            barra de pesquisa para buscar escolas próximas à sua localização.
+          </li>
+          <li>
+            Avaliações e características das escolas: Os usuários têm a opção de
+            ler e enviar avaliações sobre as escolas, além de obter informações
+            sobre suas características, como infraestrutura, currículo, e mais.
+          </li>
+        </ul>
+        <h3>Tecnologias Utilizadas:</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>MySQL</li>
+          <li>PHP</li>
+          <li>
+            Link de acesso:
+            <a href="https://github.com/httpsammy/etecTCC.git"
+              >github.com/etecTCC</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer id="footer-container"></footer>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

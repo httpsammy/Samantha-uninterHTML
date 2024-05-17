@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav" id="main-nav"></nav>
+
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("main-nav").innerHTML = html;
+        });
+    </script>
+
+    <div class="content">
+      <div class="container">
+        <h1>Formação</h1>
+        <p>
+          Minha formação acadêmica inclui um curso técnico em Informática para
+          Internet pela ETEC - Escola Técnica Estadual de São Paulo, concluído
+          em julho de 2017. Atualmente, estou cursando Engenharia de Software no
+          UNINTER Centro Universitário Internacional, com previsão de conclusão
+          em dezembro de 2025. Essa combinação de conhecimentos técnicos e
+          especializados na área de software me prepara para enfrentar os
+          desafios e aproveitar as oportunidades do mundo digital com
+          competência e criatividade.
+        </p>
+        <p>
+          Além da minha formação acadêmica, realizei cursos na área de
+          computação em nuvem, o que me proporcionou conhecimentos sólidos em
+          serviços de cloud computing, incluindo os oferecidos pela Amazon Web
+          Services. Embora ainda não possua a certificação Amazon Cloud
+          Practitioner, estou continuamente aprimorando meu conhecimento nesse
+          campo para expandir minha capacidade técnica e aplicá-la em projetos
+          futuros.
+        </p>
+        <p>
+          Além disso, fiz cursos básicos de JavaScript e HTML para
+          desenvolvimento web. Esses cursos me deram uma base sólida em
+          linguagens fundamentais para a criação de páginas e aplicativos web
+          interativos, o que amplia minhas habilidades e possibilidades de
+          atuação na área de tecnologia.
+        </p>
+      </div>
+
+      <div class="images">
+        <div class="section">
+          <img
+            src="images/html.png"
+            alt="HTML"
+            class="content-img"
+            id="badges"
+          />
+        </div>
+        <div class="section">
+          <img src="images/css.png" alt="CSS" class="content-img" id="badges" />
+        </div>
+        <div class="section">
+          <img
+            src="images/js.png"
+            alt="JavaScript"
+            class="content-img"
+            id="badges"
+          />
+        </div>
+        <div class="section">
+          <img
+            src="images/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
+            alt="Cloud Practitioner"
+            class="content-img"
+            id="badges"
+          />
+        </div>
+        <div class="section">
+          <img
+            src="images/angular.png"
+            alt="Angular"
+            class="content-img"
+            id="badges"
+          />
+        </div>
+        <div class="section">
+          <img src="images/sql.png" alt="SQL" class="content-img" id="badges" />
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer-container"></footer>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

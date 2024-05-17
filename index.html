@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio Pessoal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav" id="main-nav"></nav>
+
+    <!-- Inserir a navbar com javascript -->
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("main-nav").innerHTML = html;
+        });
+    </script>
+
+    <!-- conteúdo da página -->
+
+    <div class="content">
+      <div class="container">
+        <h1>Sobre mim</h1>
+        <p>Me chamo Samantha, tenho 24 anos e sou natural de Taubaté.</p>
+        <p>
+          Trabalho como analista de suporte, uma função que me permite aplicar
+          minha capacidade analítica na resolução eficiente de problemas.
+        </p>
+        <p>
+          Fora do ambiente profissional, sou uma entusiasta dos esportes e da
+          natureza. Pratico escalada, parkour, musculação, trilhas e rope jump.
+          Além disso, adoro viajar para treinar e conhecer pessoas envolvidas
+          com diferentes atividades esportivas.
+        </p>
+      </div>
+
+      <div class="images">
+        <div class="section">
+          <img src="images/escalada.jpg" alt="Escalada" class="content-img" />
+        </div>
+        <div class="section">
+          <img src="images/parkour.jpg" alt="Parkour" class="content-img" />
+        </div>
+        <div class="section">
+          <img src="images/academia.jpg" alt="Academia" class="content-img" />
+        </div>
+      </div>
+
+      <div class="container">
+        <p>
+          Minha paixão pela natureza me leva a buscar momentos de tranquilidade
+          junto ao mar e em trilhas, onde encontro inspiração e renovação. Esses
+          momentos são essenciais para equilibrar minha vida agitada e manter-me
+          conectada com o ambiente ao meu redor.
+        </p>
+        <p>
+          Além disso, um dos meus grandes hobbies é ouvir músicas de diversos
+          estilos e artistas. Sou apaixonada por explorar novos sons e ritmos, e
+          isso me leva a frequentar concertos musicais e assistir a
+          apresentações ao vivo sempre que possível. A música é uma fonte de
+          inspiração e relaxamento para mim, proporcionando momentos de conexão
+          e contemplação em meio à agitação do dia a dia.
+        </p>
+      </div>
+
+      <div class="images">
+        <div class="section">
+          <img src="images/gil.png" alt="Gilberto Gil" class="content-img" />
+        </div>
+        <div class="section">
+          <img src="images/tim.png" alt="Tim Maia" class="content-img" />
+        </div>
+        <div class="section">
+          <img src="images/jorge.jpg" alt="Jorge Ben Jor" class="content-img" />
+        </div>
+      </div>
+      <div class="container">
+        <p>
+          Estou constantemente em busca de novas experiências e oportunidades
+          para me desenvolver tanto pessoalmente quanto profissionalmente. Adoro
+          compartilhar minhas vivências e aprender com as experiências de outras
+          pessoas.
+        </p>
+      </div>
+    </div>
+    <footer id="footer-container"></footer>
+
+    <!-- Inserir o footer com javascript -->
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
